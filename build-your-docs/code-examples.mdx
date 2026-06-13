@@ -1,0 +1,96 @@
+---
+title: Code examples
+description: Show commands, configuration, and snippets clearly.
+---
+
+Use code examples when readers need exact commands, configuration, or snippets.
+Add a language to each code block so syntax highlighting works.
+
+## Single examples
+
+### Shell command
+
+Use shell examples for installs, setup commands, and local workflows.
+
+```bash
+npm install your-package
+```
+
+### Configuration
+
+Use JSON examples when readers need to copy or compare settings.
+
+```json title="docs.json"
+{
+  "title": "Your Product",
+  "home": "index",
+  "navigation": {
+    "pages": ["index", "quickstart"]
+  }
+}
+```
+
+### Code snippet
+
+Use file titles when the filename helps readers understand where code belongs.
+
+```ts title="example.ts" showLineNumbers
+type User = {
+  id: string;
+  email: string;
+};
+
+export function getDisplayName(user: User) {
+  return user.email.split("@")[0];
+}
+```
+
+## Multiple options
+
+### Language variants
+
+Use `CodeGroup` when readers need to choose between equivalent examples.
+
+<CodeGroup>
+  ```ts title="TypeScript"
+  export function greet(name: string) {
+    return `Hello, ${name}`;
+  }
+  ```
+
+  ```python title="Python"
+  def greet(name: str) -> str:
+      return f"Hello, {name}"
+  ```
+
+  ```go title="Go"
+  func greet(name string) string {
+      return "Hello, " + name
+  }
+  ```
+
+  ```ruby title="Ruby"
+  def greet(name)
+    "Hello, #{name}"
+  end
+  ```
+
+  ```java title="Java"
+  public static String greet(String name) {
+      return "Hello, " + name;
+  }
+  ```
+</CodeGroup>
+
+<Callout type="tip" title="Keep examples realistic">
+  Use placeholders like `YOUR_API_KEY`, `example.com`, and
+  `user@example.com`. Never include real credentials in docs.
+</Callout>
+
+<Card
+  title="Use components"
+  href="/build-your-docs/components"
+  icon="lucide:component"
+>
+  Add visual structure around examples when it helps readers follow the page.
+</Card>

@@ -1,0 +1,85 @@
+---
+title: Use components
+description: Add structure and emphasis to your docs with a few simple components.
+---
+
+Start with regular Markdown for most content. Add components when they make a
+page easier to scan, follow, or act on.
+
+This page shows simple examples you can copy into your own docs.
+
+## Common components
+
+### Callout
+
+Use a callout for notes, tips, warnings, and other important context.
+
+<Callout type="tip" title="Keep it focused">
+  Use callouts for information readers should notice before they continue.
+</Callout>
+
+### Steps
+
+Use steps when readers need to complete actions in order.
+
+<Steps>
+  <Step title="Create the page">Add a new `.mdx` file to your docs.</Step>
+  <Step title="Add it to navigation">
+    Add the page to `docs.json` so readers can find it.
+  </Step>
+  <Step title="Publish the update">
+    Publish the change when the page is ready.
+  </Step>
+</Steps>
+
+### Card
+
+Use cards for links that need a little more context than inline text.
+
+<Card
+  title="Quickstart"
+  href="/quickstart"
+  cover={{
+    icon: "lucide:rocket",
+    glass: true,
+    patternSeed: "4",
+  }}
+>
+  Make your first docs edit and publish it.
+</Card>
+
+### Tabs
+
+Use tabs when readers can choose between related paths.
+
+<Tabs>
+  <Tab label="Dashboard">
+    Edit pages visually, update settings, and publish from Radiant.
+  </Tab>
+  <Tab label="Source files">
+    Edit `.mdx` files and `docs.json` directly when you want source control.
+  </Tab>
+</Tabs>
+
+### Accordion
+
+Use accordions for optional details or short FAQs.
+
+<AccordionGroup>
+  <Accordion title="Should every page use components?">
+    No. Use components when they make the page clearer. Plain Markdown is often
+    enough.
+  </Accordion>
+  <Accordion title="Can components include Markdown?">
+    Yes. Component bodies can include text, links, lists, inline code, and other
+    content.
+  </Accordion>
+</AccordionGroup>
+
+<Card
+  title="Edit content"
+  href="/build-your-docs/edit-content"
+  icon="lucide:file-pen"
+>
+  Choose the editing workflow that works best for your team.
+</Card>

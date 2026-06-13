@@ -1,0 +1,122 @@
+---
+title: Welcome to your docs
+description: Start editing, customizing, and publishing your docs with Radiant.
+---
+
+This is the starter site for your product documentation. Replace these pages
+with details about your product, your users, and the tasks they need to
+complete.
+
+Radiant keeps your docs in this repository, gives your team a visual editor in
+the dashboard, and lets you ask the writing agent to help draft or revise pages.
+When your changes are ready, publish them to deploy the latest version of your
+docs site.
+
+## Start here
+
+### Learn the workflow
+
+<Columns columns={2}>
+  <Column>
+    <Card title="Quickstart" href="/quickstart" icon="lucide:rocket">
+      Make one small edit and publish it so you can see the full workflow.
+    </Card>
+  </Column>
+  <Column>
+    <Card
+      title="Edit content"
+      href="/build-your-docs/edit-content"
+      icon="lucide:file-pen"
+    >
+      Choose between the visual editor, the writing agent, and source files.
+    </Card>
+  </Column>
+</Columns>
+
+### Shape the content
+
+<Columns columns={2}>
+  <Column>
+    <Card
+      title="Use components"
+      href="/build-your-docs/components"
+      icon="lucide:component"
+    >
+      Add callouts, steps, cards, tabs, and FAQs to make pages easier to scan.
+    </Card>
+  </Column>
+  <Column>
+    <Card
+      title="Code examples"
+      href="/build-your-docs/code-examples"
+      icon="lucide:code"
+    >
+      Show commands, configuration, and code snippets clearly.
+    </Card>
+  </Column>
+</Columns>
+
+### Configure and publish
+
+<Columns columns={2}>
+  <Column>
+    <Card
+      title="Customize site"
+      href="/build-your-docs/customize-site"
+      icon="lucide:palette"
+    >
+      Update your title, navigation, branding, homepage, and assistant prompts.
+    </Card>
+  </Column>
+  <Column>
+    <Card
+      title="Use AI"
+      href="/build-your-docs/use-ai"
+      icon="lucide:sparkles"
+    >
+      Learn how the writing agent and reader-facing Ask AI assistant fit in.
+    </Card>
+  </Column>
+</Columns>
+
+<Card
+  title="Publish"
+  href="/build-your-docs/publish"
+  icon="lucide:cloud-upload"
+>
+  See what happens when you publish changes and how your live docs update.
+</Card>
+
+## What to replace first
+
+1. Update the `title` in `docs.json` from `Your Product` to your product name.
+2. Rewrite this page so it introduces your product and points readers to the
+   most important next step.
+3. Replace the example quickstart with the fastest useful workflow for your
+   users.
+4. Add or remove pages, then update `docs.json` so the navigation matches.
+
+## FAQ
+
+<AccordionGroup>
+  <Accordion title="Is this content meant to stay?">
+    No. Treat these pages as scaffolding. Keep any structure that helps you,
+    then replace the placeholder text with documentation for your own product.
+  </Accordion>
+
+  <Accordion title="Do I need to edit files directly?">
+    No. You can edit pages, settings, and navigation from the Radiant
+    dashboard. If your team prefers source control, you can also edit the MDX
+    files and `docs.json` directly.
+  </Accordion>
+
+  <Accordion title="What is docs.json?">
+    `docs.json` is the configuration file for your docs site. It controls the
+    site title, home page, navigation, and other site-level settings.
+  </Accordion>
+
+  <Accordion title="Can Radiant help write these docs?">
+    Yes. Use the writing agent to draft, revise, reorganize, or clean up docs.
+    You can review the changed files before publishing.
+  </Accordion>
+</AccordionGroup>

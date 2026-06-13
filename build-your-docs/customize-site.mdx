@@ -1,0 +1,68 @@
+---
+title: Customize site
+description: Update the parts of the starter site that make it yours.
+---
+
+Start by replacing the starter labels with your product name, your page
+structure, and the routes your readers should see first.
+
+You can make many site-level changes from the Radiant dashboard. If you prefer
+source files, edit `docs.json`.
+
+## Common first changes
+
+### Starter settings
+
+| Setting | Why it matters | Where it lives |
+| --- | --- | --- |
+| Site title | Shows your product or company name | `title` in `docs.json` |
+| Home page | Controls the page readers see first | `home` in `docs.json` |
+| Navigation | Defines the sidebar pages and groups | `navigation` in `docs.json` |
+| Assistant questions | Suggests starter questions for Ask AI | `assistant.questions` in `docs.json` |
+
+## Minimal docs.json
+
+### Example config
+
+A minimal Radiant config looks like this:
+
+```json
+{
+  "title": "Your Product",
+  "home": "index",
+  "navigation": {
+    "pages": [
+      {
+        "page": "index",
+        "title": "Welcome"
+      }
+    ]
+  }
+}
+```
+
+### Page paths
+
+Page paths in `docs.json` are relative to the docs root. Do not include a
+leading slash or the `.mdx` extension.
+
+## Add a page
+
+### Create the file
+
+1. Create a new `.mdx` file.
+2. Add a `title` and `description` in frontmatter.
+
+### Update navigation
+
+3. Add the page to `navigation.pages` in `docs.json`.
+4. Publish the change when the page is ready.
+
+<Callout type="tip" title="Keep navigation close to the reader's journey">
+  Organize pages around what readers want to do or understand. A short,
+  predictable navigation is better than a long list of every internal detail.
+</Callout>
+
+<Card title="Publish" href="/build-your-docs/publish" icon="lucide:cloud-upload">
+  Publish the updated config when your navigation is ready.
+</Card>

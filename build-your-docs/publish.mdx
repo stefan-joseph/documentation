@@ -1,0 +1,60 @@
+---
+title: Publish
+description: Make docs changes live for your readers.
+---
+
+Publishing sends your latest docs changes through Radiant's build and
+deployment process. When the deployment succeeds, your live docs site reflects
+the content and configuration you published.
+
+## What gets published
+
+### Content and configuration
+
+Radiant publishes the docs repo as a site. That includes:
+
+- MDX pages.
+- `docs.json` configuration.
+- Images and other media referenced by your docs.
+- API reference files, if your docs use them.
+
+## Publishing workflow
+
+### From draft to deployment
+
+<Steps>
+  <Step title="Finish your draft">
+    Review the pages, navigation, and settings you changed. Keep placeholder
+    content only if you want readers to see it.
+  </Step>
+
+  <Step title="Publish changes">
+    Click **Publish** from the dashboard. Radiant commits the selected changes
+    and starts a deployment.
+  </Step>
+
+  <Step title="Follow the deployment">
+    Open **Overview** to see the deployment status. A successful deployment
+    means the published site is serving the latest docs.
+  </Step>
+</Steps>
+
+## After publishing
+
+### Share and improve
+
+Share the published site with teammates or early users. Their feedback will
+usually tell you which page to improve next.
+
+<Columns columns={2}>
+  <Column>
+    <Card title="Quickstart" href="/quickstart" icon="lucide:rocket">
+      Try the full edit and publish loop.
+    </Card>
+  </Column>
+  <Column>
+    <Card title="Use AI" href="/build-your-docs/use-ai" icon="lucide:sparkles">
+      Ask for help improving the next draft.
+    </Card>
+  </Column>
+</Columns>

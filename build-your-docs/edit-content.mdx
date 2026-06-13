@@ -1,0 +1,68 @@
+---
+title: Edit content
+description: Choose how your team wants to create and update docs.
+---
+
+Radiant gives your team a few ways to work on the same docs. You can start in
+the dashboard, ask the writing agent for help, or edit the source files
+directly.
+
+| Workflow | Best for | What changes |
+| --- | --- | --- |
+| Visual editor | Browser-based editing without code | Page text and structure |
+| Writing agent | Drafting, revising, and reorganizing content | MDX pages and related config |
+| Source files | Developer-led review and local editing | `.mdx` files and `docs.json` |
+
+## Use the visual editor
+
+### When to use it
+
+Use the visual editor when you want to update content from the dashboard. This
+is the fastest path for teammates who do not want to work directly in source
+files.
+
+### Good first edits
+
+Good first edits include:
+
+- Rewriting the homepage introduction.
+- Updating a quickstart step.
+- Adding a short FAQ.
+- Fixing unclear headings or outdated product language.
+
+## Ask the writing agent
+
+### When to use it
+
+Use the writing agent when you know the outcome you want but do not want to
+make every edit by hand. Ask for changes in plain language, then review the
+modified files before publishing.
+
+### Example requests
+
+Useful prompts:
+
+- "Rewrite the homepage for a new user evaluating our product."
+- "Turn this long page into a short quickstart."
+- "Add a FAQ for common setup questions."
+- "Make the tone clearer and more concise."
+
+## Edit source files
+
+### When to use it
+
+Use source files when your team prefers Git-based review or local tools. Pages
+are written in MDX. Site configuration lives in `docs.json`.
+
+### Keep navigation in sync
+
+When you add a page, add the `.mdx` file and then add that page to navigation in
+`docs.json`.
+
+<Card
+  title="Customize site"
+  href="/build-your-docs/customize-site"
+  icon="lucide:palette"
+>
+  See the parts of `docs.json` most teams edit first.
+</Card>
